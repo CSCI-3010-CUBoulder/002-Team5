@@ -1,13 +1,13 @@
 CXX = g++
 CXXFLAGS	= -std=c++17 -Wall
 
-all:
+all: main
 
 clean:
-	rm UtiltiyFunctions.o main
+	rm UtilityFunctions.o main
 
-main: main.cpp
-	$(CXX) $(CXXFLAGS) UtilityFunctions.cpp main.cpp -o main
+main: UtilityFunctions.o main.cpp
+	$(CXX) $(CXXFLAGS) UtilityFunctions.o main.cpp -o main
 
-UtilityFunctions.cpp: UtilityFunctions.cpp
+UtilityFunctions.o: UtilityFunctions.cpp
 	$(CXX) $(CXXFLAGS) -c UtilityFunctions.cpp
