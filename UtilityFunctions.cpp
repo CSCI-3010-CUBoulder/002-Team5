@@ -6,4 +6,6 @@ std::vector <int> VectorTimes(std::vector <int> x, int mult){
   for(int i=0; i<size; i++){
     x[i]*=mult;
   }
+
+  return x;
 }
