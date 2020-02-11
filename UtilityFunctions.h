@@ -1,9 +1,9 @@
-#ifndef UTILITYFUNCTIONS_H
-#define UTILITYFUNCTIONS_H
-#include <string>
+#ifndef ULTILITYFUNCTION_H
+#define ULTILITYFUNCTION_H
+
+#include <iostream>
 #include <vector>
-using namespace std;
 
-vector<int> VectorPlusN(int n, vector<int> v);
+std::vector <int> VectorTimes(std::vector <int> x, int mult);
 
-#endif
+#endif  // ULTILITYFUNCTION_H
