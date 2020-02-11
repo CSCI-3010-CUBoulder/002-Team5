@@ -1,5 +1,0 @@
-language: cpp
-#before_script: cd utility_functions
-script:
-  - make
-  - ./test
